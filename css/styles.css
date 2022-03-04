@@ -44,7 +44,7 @@ body {
 }
 
 .nav-link {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     font-weight: 400;
     color: white;
 }
@@ -54,7 +54,7 @@ body {
 }
 
 .nav-logo {
-    font-size: 2.1rem;
+    font-size: 2.9rem;
     font-weight: 500;
     color: #fff;
 }
@@ -90,9 +90,40 @@ body {
     transition: opacity 1s ease-in-out;
 }
 
-/* .slideshow-img:first-child {
-    display: block;
-} */
+/* MAIN CONTENT */
+.main-container {
+    margin: 96vh 20px 20px 20px;
+    padding: 20px 20px;
+    background: rgba(255,255,255, 0.2);
+    border-radius: 10px;
+}
+
+.main-container h3 {
+    font-size: 5rem;
+    color: white;
+}
+
+.main-container p {
+    font-size: 2.5rem;
+    color: white;
+}
+
+/* EVENTS CONTAINER */
+.events-container {
+    text-align: center;
+    color: white;
+}
+
+.event-tickets-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 20px;
+}
+
+.artist-image {
+    width: 75%;
+}
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
@@ -144,6 +175,11 @@ body {
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* EVENTS CONTAINER */
+    .event-tickets-wrapper {
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }

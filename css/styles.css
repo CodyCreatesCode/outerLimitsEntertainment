@@ -10,12 +10,12 @@ html {
 }
 
 body {
-    background-color: #101010;
+    background-color: black;
 }
 /* NAVIGATION */
 .navigation {
     z-index: 100;
-    background-color: #101010;
+    background-color: black;
     top: 0;
     position: sticky;
 }
@@ -152,6 +152,64 @@ body {
     width: 75%;
 }
 
+/* CONTACT & SOCIAL */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.social {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.social-icons {
+    margin: 20px;
+    display:grid;
+    grid-template-columns: 128px 128px;
+    grid-gap: 30px;
+    justify-content: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid white;
+    margin: 0px 20px 20px;
+    padding: 20px;
+}
+
+.contact-form h3 {
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+}
+
+.contact-form input {
+    font-size: 2rem;
+    padding: 3px 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.contact-form button {
+    padding: 5px;
+    font-size: 3rem;
+    color: white;
+    background-color: black;
+    border: 4px solid white;
+}
+
+/* FOOTER */
+.footer {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.1rem;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
     /* NAVIGATION */
@@ -207,6 +265,10 @@ body {
     /* EVENTS CONTAINER */
     .event-tickets-wrapper {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact-container {
+        display: block;
     }
 
 }
